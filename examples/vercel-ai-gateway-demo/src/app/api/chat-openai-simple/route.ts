@@ -2,11 +2,9 @@ import OpenAI from "openai";
 
 const openai = new OpenAI({
   apiKey: process.env.VERCEL_AI_GATEWAY_API_KEY,
-  baseURL: "http://localhost:8789/v1",
+  baseURL: "https://vercel.helicone.ai/v1",
   defaultHeaders: {
     "Helicone-Auth": `Bearer ${process.env.HELICONE_API_KEY}`,
-    "Helicone-Target-URL": "https://ai-gateway.vercel.sh",
-    "Helicone-Target-Provider": "VERCEL",
   },
 });
 

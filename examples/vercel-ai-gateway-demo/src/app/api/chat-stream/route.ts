@@ -3,7 +3,7 @@ import { createGateway } from "@ai-sdk/gateway";
 
 const gateway = createGateway({
   apiKey: process.env.VERCEL_AI_GATEWAY_API_KEY,
-  baseURL: "http://localhost:8793/v1/ai",
+  baseURL: "https://vercel.helicone.ai/v1/ai",
   headers: {
     "Helicone-Auth": `Bearer ${process.env.HELICONE_API_KEY}`,
   },
